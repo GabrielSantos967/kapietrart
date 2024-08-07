@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "Mont";
+    src: url(./font/Montserrat-Light.ttf);
+}
+
+.cabecalho{
+    width: 100vw;
+    height: 400px;
+    display: flex;
+    background-image: url("./img/man-tattooing-with-gloves-side-view.jpg");
+    background-size: cover;
+    padding: 50px;
+    flex-direction: column-reverse;
+    gap: 160px;
+}
+
+.ctxt{
+    font-size: 30px;
+    border-left: 1px solid yellow;
+    height: 150px;
+    width: 280px;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    font-family: "Mont";
+}
+
+.ctxt span{
+    color: yellow;
+}
+
+.btn{
+    border: 1px solid blue;
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 50px;
+    color: white;
+    font-size: 20px;
+    font-family: "Mont";
+}
