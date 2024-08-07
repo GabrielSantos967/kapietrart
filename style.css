@@ -6,8 +6,9 @@
 .cabecalho{
     width: 100vw;
     height: 400px;
+    max-width: 100vw;
     display: flex;
-    background-image: url("./img/man-tattooing-with-gloves-side-view.jpg");
+    background-color: green;
     background-size: cover;
     padding: 50px;
     flex-direction: column-reverse;
@@ -30,12 +31,30 @@
     color: yellow;
 }
 
-.btn{
-    border: 1px solid blue;
+.bhead{
+
     display: flex;
     flex-direction: row-reverse;
     gap: 50px;
     color: white;
     font-size: 20px;
     font-family: "Mont";
+    margin-right: 10px;
+    box-sizing: border-box;
+}
+#bhead{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1px;
+    box-sizing: border-box;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+#bhead:hover{
+    border: 1px solid yellow;
+    border-radius: 10px;
 }
