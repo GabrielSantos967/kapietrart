@@ -4,7 +4,7 @@
 }
 
 body{
-    background-color: rgb(233, 233, 233);
+    background-color: rgb(230, 229, 229);
 }
 
 .cabecalho{
@@ -12,7 +12,8 @@ body{
     height: 400px;
     max-width: 100vw;
     display: flex;
-    background-image: url(./img/man-tattooing-with-gloves-side-view.jpg);
+    /*background-image: url(./img/man-tattooing-with-gloves-side-view.jpg);*/
+    background-color: green;
     background-size: cover;
     padding: 50px;
     flex-direction: column-reverse;
@@ -105,5 +106,126 @@ body{
 .btxt{
     font-family: "Mont";
     font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    padding: 10px;
     border: 1px solid green;
+    gap: 20px;
+}
+
+.btxt h1{
+    border-left: 2px solid #FFD369;
+}
+
+.photo{
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid red;
+    background-color: #FFD369;
+    font-family: "Mont";
+    gap: 5px;
+    padding: 30px;
+}
+
+.mini{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 30px;
+}
+
+.photo1, .photo2, .photo3, .photo4{
+    width: 80px;
+    height: 80px;
+
+}
+
+.photo1, .photo3{
+    background-color: green;
+}
+
+
+.photo2, .photo4{
+    background-color: red;
+}
+
+.car{
+    position: relative;
+    width: 500px;
+    height: 250px;
+    overflow: hidden;
+}
+
+.max {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 2000px; /* Largura total necessária para todos os itens em linha (número de itens * largura de um item) */
+    height: 100%;
+    transition: left 0.5s ease; /* Transição suave */
+}
+
+.mp1, .mp2, .mp3, .mp4 {
+    position: absolute;
+    width: 500px; /* Largura de cada item */
+    height: 250px; /* Altura de cada item */
+}
+
+.mp1 { background-color: green; left: 0; }
+.mp2 { background-color: red; left: 500px; }
+.mp3 { background-color: green; left: 1000px; }
+.mp4 { background-color: red; left: 1500px; }
+
+.btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    cursor: pointer;
+}
+
+#bt1 {
+    left: 10px; /* Posição do botão "Anterior" */
+}
+
+#bt2 {
+    right: 10px; /* Posição do botão "Próximo" */
+}
+
+
+@media (max-width: 768px) {
+    .btxt {
+        font-size: 20px;
+    }
+
+    .intro{
+        gap: 100px;
+    }
+}
+
+@media (max-width: 390px) {
+    .btxt{
+        font-size: 13px;
+        width: 100vw;
+    }
+
+    .intro{
+        flex-direction: column-reverse;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .bimage{
+        width: 100vw;
+    }
+
+    .car{
+        width: 95vw;
+        height: 250px;
+    }
 }
