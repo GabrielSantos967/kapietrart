@@ -5,6 +5,8 @@
 
 body{
     background-color: rgb(230, 229, 229);
+    overflow-x: hidden;
+    height: 1000px;
 }
 
 .cabecalho{
@@ -12,8 +14,8 @@ body{
     height: 400px;
     max-width: 100vw;
     display: flex;
-    /*background-image: url(./img/man-tattooing-with-gloves-side-view.jpg);*/
-    background-color: green;
+    background-image: url(./img/man-tattooing-with-gloves-side-view.jpg);
+
     background-size: cover;
     padding: 50px;
     flex-direction: column-reverse;
@@ -120,7 +122,7 @@ body{
 
 .photo{
     width: 100vw;
-    height: 700px;
+    height: 900px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -146,19 +148,30 @@ body{
 
 }
 
-.photo1, .photo3{
-    background-color: green;
+.photo3{
+    background-image: url(./img/realista.jpg);
+    background-size: cover;
 }
 
+.photo1{
+    background-image: url(./img/blackowrk.jpeg);
+    background-size: cover;
+}
 
-.photo2, .photo4{
-    background-color: red;
+.photo2{
+    background-image: url(./img/fineline.jpg);
+    background-size: cover;
+}
+
+.photo4{
+    background-image: url(./img/mandala.png);
+    background-size: cover;
 }
 
 .car{
     position: relative;
     width: 500px;
-    height: 250px;
+    height: 350px;
     overflow: hidden;
 }
 
@@ -174,13 +187,13 @@ body{
 .mp1, .mp2, .mp3, .mp4 {
     position: absolute;
     width: 500px;
-    height: 250px;
+    height: 350px;
 }
 
-.mp1 { background-color: green; left: 0; }
-.mp2 { background-color: red; left: 500px; }
-.mp3 { background-color: green; left: 1000px; }
-.mp4 { background-color: red; left: 1500px; }
+.mp1 { background-image: url(./img/blackowrk.jpeg); background-size: cover; left: 0; }
+.mp2 { background-image: url(./img/fineline.jpg); background-size: cover; left: 500px; }
+.mp3 { background-image: url(./img/realista.jpg); background-size: cover; left: 1000px; }
+.mp4 { background-image: url(./img/mandala.png); background-size: cover; left: 1500px; }
 
 .btn {
     position: absolute;
@@ -212,7 +225,9 @@ body{
     flex-direction: column;
     font-family: "Mont";
     align-items: center;
+    text-align: center;
     width: 300px;
+    height: 200px;
     padding: 10px;
 }
 
