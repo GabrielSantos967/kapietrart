@@ -299,4 +299,8 @@ body{
         padding: 10px;
         border-bottom: 2px solid #e6bd60;
     }
+
+    .bimage{
+        width: auto;
+    }
 }
