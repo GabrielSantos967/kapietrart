@@ -264,6 +264,10 @@ body{
 }
 
 @media (max-width: 390px) {
+    body{
+        width: auto;
+    }
+    
     .btxt{
         font-size: 13px;
         width: 100vw;
