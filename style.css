@@ -3,6 +3,10 @@
     src: url(./font/Montserrat-Light.ttf);
 }
 
+*{
+    box-sizing: border-box;
+}
+
 body{
     background-color: rgb(230, 229, 229);
     overflow-x: hidden;
@@ -88,7 +92,7 @@ body{
 
 .intro{
     width: 100vw;
-    height: 400px;
+    height: 600px;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -244,6 +248,7 @@ body{
     }
 
     .intro{
+        height: 500px;
         gap: 100px;
     }
 
@@ -265,7 +270,7 @@ body{
 
 @media (max-width: 390px) {
     body{
-        width: auto;
+        width: 100%;
     }
     
     .btxt{
