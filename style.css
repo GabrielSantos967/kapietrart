@@ -271,11 +271,12 @@ body{
 @media (max-width: 390px) {
     body{
         width: 100%;
+        margin: 0;
     }
     
     .btxt{
         font-size: 13px;
-        width: 100vw;
+        width: 100%;
     }
 
     .intro{
@@ -285,11 +286,11 @@ body{
     }
 
     .bimage{
-        width: 100vw;
+        width: 100%;
     }
 
     .car{
-        width: 95vw;
+        width: 100%;
         height: 500px;
     }
 
@@ -311,5 +312,10 @@ body{
 
     .bimage{
         width: auto;
+    }
+
+    .desc, .photo, .types {
+        margin: 0;
+        padding: 0;
     }
 }
